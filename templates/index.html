@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar PDF como Imagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .page {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        //function refreshPage() {
+        //    setTimeout(() => {
+        //        location.reload();
+        //    }, 5000); // Atualiza a página a cada 5 segundos
+        //}
+    </script>
+</head>
+<body onload="refreshPage()">
+    <!--<h1>Páginas do PDF como Imagens</h1>-->
+    {% for image in images %}
+    <div class="page">
+        <img src="{{ url_for('static', filename='images/' ~ image) }}" alt="PDF Page" width="100%">
+    </div>
+    {% endfor %}
+    <!--<p>Esta página será atualizada automaticamente a cada 5 segundos.</p>-->
+</body>
+</html>

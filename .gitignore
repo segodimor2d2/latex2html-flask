@@ -1,0 +1,10 @@
+.env
+.DS_Store
+.error
+
+.*.swp
+.*.swo
+
+**/*.aux
+**/*.log
+**/*.out
