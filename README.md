@@ -7,17 +7,25 @@ pdflatex doc.txt
 ```
 ## Dependências
 - poppler - para usar a lib pdf2image
+- xdotool - para usar o comando refrech no browser
 - venv - para criar um ambiente virtual
 - flask - para rodar o servidor
 - watchdog - para monitorar o txt
 - pdf2image - para converter o pdf para imagem e poder ver no html
 
 ```bash
+xdotool search --onlyvisible --class "google-chrome" windowactivate --sync key F5
+```
+
+```bash
+
 python -m venv 01latex
 
 sudo pacman -S poppler
+sudo pacman -S xdotool
 
 pip install flask watchdog pdf2image
+
 ```
 
 ## para rodar o servidor

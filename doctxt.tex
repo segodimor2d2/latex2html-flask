@@ -14,6 +14,7 @@
 \usepackage{titlesec}
 %\usepackage{xcolor}
 \usepackage{setspace}
+\usepackage{nopageno}
 
 \usepackage{helvet} % Carrega a fonte Helvetica
 \renewcommand{\familydefault}{\sfdefault} % Define a fonte sans-serif como padrão
@@ -83,10 +84,10 @@
   \vspace{2mm} % Ajuste o espaçamento superior como desejado
   \large{\textcolor{corLarge}{Desenvolvedor Full-Stack}} \textbar\ 
   \large{\textcolor{corLarge}{Node}} \textbar\
-  \large{\textcolor{corLarge}{Java}} \textbar\
-  \large{\textcolor{corLarge}{Python}} \textbar\
   \large{\textcolor{corLarge}{React}} \textbar\
-  \large{\textcolor{corLarge}{Angular}}
+  \large{\textcolor{corLarge}{Python}} \textbar\
+  \large{\textcolor{corLarge}{Java}}
+  %\large{\textcolor{corLarge}{Angular}}
   % \large{\textcolor{corLarge}{AWS}} \textbar\
 \end{minipage}%
 \begin{minipage}[t]{0.3\textwidth}
@@ -101,12 +102,13 @@
 \vspace{5mm}
 
 Desenvolvedor com mais de 8 anos como Full-Stack.
-Tenho experiencia no desenvolvimento de interfaces e microsserviços,
-Trabalhei para clientes como SKY, DirecTV-GO e Open Finance Brasil.
+Tenho experiencia no desenvolvimento de interfaces e microsserviços e integrações,
+Trabalhei para clientes como SKY, DirecTV-GO
+e Open Finance Brasil.
 
 Eu fiz parte do desenvolvimento da arquitetura do fluxo de criação de conta da DirecTV-GO
 usada em vários países de latino América,
-também já atuei na governança de uma base de cerca de 500 mil contas em produção.
+também já atuei em governança de dados com bases de cerca de 500 mil contas em produção.
 
 %====================================================================================================
 \section*{Experiência Profissional}
@@ -119,33 +121,35 @@ também já atuei na governança de uma base de cerca de 500 mil contas em produ
 %Minhas principais responsabilidades e atribuições incluíram:
 
 \vspace{2mm} \textcolor{corSubSection}{\bfseries{SKY:}}
-Trabalhei com micro serviços e interfaces focadas em prospectar cliente.
+Trabalhei com a integração de microsserviços e interfaces focadas em prospectar clientes.
 Atuei no desenvolvimento de uma ferramenta inovadora para conversão de clientes SKY
 usando modelos estatísticos para gerar propostas personalizadas de planos,
 visando aumentar a taxa de conversão de clientes prospectivos. 
 
-Desenvolvi microsserviços processando os dados sensíveis que os clientes
+Desenvolvi microsserviços para processar dados sensíveis que os clientes
 desejavam tratar dentro da base da SKY para cumprir com a LGPD.
 
 \vspace{2mm} \textcolor{corSubSection}{\bfseries{DirecTV-GO:}}
-Participei do desenvolvimento da arquitetura do fluxo de criação de conta
-usando microserviços, lambda serverless ou kubernets para o fluxo de criação de contas de usuários para a DTVGO em toda a América Latina.
+Trabalhei com arquitetura de microsserviços baseada em eventos
+para desenhar o fluxo de criação de contas de usuários
+da a DTVGO em toda a América Latina.
 
-AT\&T no México
+Integrei o fluxo de criação de conta para que os usuários do México
+pudessem abrir as contas usando a operadora telefônica AT\&T.
 
-Desenvolvimento de diversas funcionalidades na AWS,
+Atuei no desenvolvimento de diversas funcionalidades na AWS,
 incluindo o uso de filas SNS, SQS (com Retry e DLQ)
 e aplicações distribuídas com Step Functions.
 
-
-Automação de processos: Escrevi scripts em JavaScript e Python
-para automatizar processos de detecção e ajuste de contas,
+Atuei em governança de dados escrevendo scripts
+para automatizar processos de detecção e ajuste das contas
+assim como na aplicação de campanhas,
 lidando com bases de relatórios que continham aproximadamente
-800 mil linhas em produção para 500 mil contas.
+800 mil linhas em produção para uma base de aproximadamente 500 mil contas.
 
 \vspace{2mm} \textcolor{corSubSection}{\bfseries{Open Finance Brasil:}}
 desenvolvimento de dashboards para a Open Finance Brasil
-Integração e desenvolvimento de dashboards: Desenvolvi microserviços para a integração BFB e BFF dos dashboards da Open Finance Brasil, além de trabalhar no front utilizando Next.js.
+Integração e desenvolvimento de dashboards: Desenvolvi microsserviços para a integração BFB e BFF dos dashboards da Open Finance Brasil, além de trabalhar no front utilizando Next.js.
 
 \subsection*{Capela Software}
 \textcolor{corSubSection}{\emph{Analista de Sistemas}}
@@ -155,11 +159,13 @@ Trabalhei no departamento de desenvolvimento como programador pleno Full-Satck n
 
 Trabalhei em linguajes como JavaScript (Node.js, Express.js) no Back-End; no Fornt-End em JavaScript (React.js, Angular), e na importação de masas de dados usando Java Spring Batch, Spring Boot, Python
 
+\clearpage
+
 \subsection*{Requestia}
 \textcolor{corSubSection}{\emph{Programador Full Stack}}
 \hfill \textcolor{corSubSection}{Abr. de 2018 - Mar. de 2019}
 
-Trabalhei como desenvolvedor web no departamento de marketing em conjunto com o departamento de desenvolvimento, onde criávamos micro serviços focados ao marketing e também na automação de campanhas de marketing. Fiz treinamentos e cursos sobre ITSM(ITIL), trabalhei também com Centro de serviços Compartilhados, Notificação e escalamento baseados em SLA's.
+Trabalhei como desenvolvedor web no departamento de marketing em conjunto com o departamento de desenvolvimento, onde criávamos microsserviços focados ao marketing e também na automação de campanhas de marketing. Fiz treinamentos e cursos sobre ITSM(ITIL), trabalhei também com Centro de serviços Compartilhados, Notificação e escalamento baseados em SLA's.
 
 \subsection*{REC Produçoes Interativas}
 \textcolor{corSubSection}{\emph{Programador Full Stack}}
@@ -177,7 +183,7 @@ Programador no desenvolvimento de sites como "Rec Soluções Interativas", "Posc
 \section*{Skills}
 \noindent\makebox[\linewidth]{\rule{\linewidth}{0.1mm}\textcolor{corLarge}{}}
 
-\textcolor{corSubSection}{Arquitetura de microserviços:}
+\textcolor{corSubSection}{Arquitetura de microsserviços:}
 APIs REST, Clean Code, SOLID, Design Patterns, Design de Módulos, Testabilidade, lambda serverless ou kubernets na AWS; Conhecimentos em modelo arquitetural port and adapters e conceito hexagonal.
 
 \textcolor{corSubSection}{Javascript:}
@@ -187,7 +193,7 @@ Node.js, Babel, Hapi, Express, Stack MEAN, MERN: Angular, React, Vue, estados co
 Pandas, APIs Django | Flask, Scraping e Crawling com Beautifulsoup, automação de request via API, Scrapy e Selenium, Processamento de linguagem natural (PNL) com spaCy, UI com Tkintee, ORM, SQLAlchemy, Pymongo,
 
 \textcolor{corSubSection}{Java:}
-Spring Boot, desenvolvimento de microserviços, APIs REST e aplicações web, stack MEAN com Angular, MEVN com Vue.js, injeção de Dependência, integração e manipulação de dados utilizando JPA, Hibernate, Build e Gerenciamento de Dependências, Maven, Gradle
+Spring Boot, desenvolvimento de microsserviços, APIs REST e aplicações web, stack MEAN com Angular, MEVN com Vue.js, injeção de Dependência, integração e manipulação de dados utilizando JPA, Hibernate, Build e Gerenciamento de Dependências, Maven, Gradle
 
 \textcolor{corSubSection}{Bancos de Dados:}
 Banco de sistemas de dados relacionais como MySQL, PostgreSQL, SQLite e, DynamoDB, NoSQL usando MongoDB, Redis; ORM
@@ -213,12 +219,41 @@ Experiência trabalhando na metodologia Scrum, Kanban, plataformas ágeis como J
 %\textcolor{corSubSection}{Desenvolvimento Android:} Android SDK, Kotlin, Java, Android Jetpack Arquiteturas MVVM e MVC
 
 %====================================================================================================
-\section*{Educação}
+\section*{Formação Acadêmica}
 \noindent\makebox[\linewidth]{\rule{\linewidth}{0.1mm}\textcolor{corLarge}{}}
 
-\subsection*{Nome da Instituição}
-\emph{Curso} \hfill Período\\
-Descrição do curso e atividades relevantes, projetos e realizações acadêmicas.
+\subsection*{Universidade Estadual de Campinas}
+\textcolor{corSubSection}{\emph{Pós Graduação em Marketing Organizacional}}
+\hfill \textcolor{corSubSection}{2018 - 2020}
+
+Fiz disciplinas sobre desenvolvimento de produtos e serviços,
+pesquisa de mercado, administração entre outras.
+
+
+\subsection*{Universidade Estadual de Campinas}
+\textcolor{corSubSection}{\emph{Cursos Estudante Espacial Faculdade de Engenharia Elétrica e de Computação (FEEC)}}
+\hfill \textcolor{corSubSection}{2014 - 2015}
+
+\begin{itemize}
+    \item Machine learning, Neural network, Genetic Algorithms(GAs), Bees Algorithms, Ant Colony Optimisation
+    \item Sistemas de Cognição Artificial e Tópicos em Engenharia de Computação VI
+    \item Visualização e Gerência de Informação - Big Data
+\end{itemize}
+
+\subsection*{Universidad de San Buenaventura}
+\textcolor{corSubSection}{\emph{Extensão Arte e Comunicação Visual}}
+\hfill \textcolor{corSubSection}{2008 - 2009}
+
+\subsection*{Universidad de San Buenaventura}
+\textcolor{corSubSection}{\emph{Graduação Engenharia de Som}}
+\hfill \textcolor{corSubSection}{2004 - 2009}
+
+
+
+
+
+
+
 
 %\section*{Projetos}
 %\subsection*{Nome do Projeto}

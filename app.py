@@ -21,6 +21,12 @@ def convert_pdf_to_images():
 def compile_latex():
     subprocess.call(['pdflatex', 'doctxt.tex'])
 
+
+def refreshBrowser():
+    # xdotool search --onlyvisible --class "google-chrome" windowactivate --sync key F5
+    command = ["xdotool", "search", "--onlyvisible", "--class", "google-chrome", "windowactivate", "--sync", "key", "F5"]
+    result = subprocess.run(command, capture_output=True, text=True)
+
 class MyHandler(FileSystemEventHandler):
     """Classe que trata eventos de modificação de arquivo."""
     def on_modified(self, event):
@@ -28,6 +34,7 @@ class MyHandler(FileSystemEventHandler):
             print("Arquivo .tex modificado, recompilando...")
             compile_latex()
             convert_pdf_to_images()
+            refreshBrowser()
 
 @app.route('/')
 def serve_html():
