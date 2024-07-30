@@ -145,7 +145,7 @@ e aplicações distribuídas com Step Functions.
 Atuei em governança de dados escrevendo scripts
 para automatizar processos de detecção e ajuste das contas
 assim como na aplicação de campanhas,
-lidando com bases de relatórios que continham aproximadamente
+lidando com bases de relatórios armazenados em S3 que continham aproximadamente
 800 mil linhas em produção para uma base de aproximadamente 500 mil contas.
 
 \vspace{2mm} \textcolor{corSubSection}{\bfseries{Open Finance Brasil:}}
@@ -212,15 +212,12 @@ Programador no desenvolvimento de sites como "Rec Soluções Interativas",
 Arquitetura de microsserviços, 
 padrões como MVC, MVVM, ports and adapters/Hexagonal
 
-Clean Code, SOLID, Design Patterns,
+Clean Code, SOLID, Design Patterns.
+%Linting, Formatting, Linters, Prettier, Eslint, Stylelint,
 
-%AWS EC2
-%AWS RDS
-%AWS S3
-
-\textcolor{corSubSection}{Padrões de Design}
-APIs REST, Serverless, GraphQL, SOAP
-Arquitetura Orientada a Eventos.
+\textcolor{corSubSection}{Padrões de Design:}
+APIs REST, Serverless, GraphQL, SOAP,
+Arquitetura Orientada a Eventos (lambda ).
 
 \textcolor{corSubSection}{Javascript:}
 TypeScript, Node, Express, Hapi,
@@ -229,40 +226,62 @@ control de estados como Redux (Saga, Thunk), Hooks,
 Babel, Webpack.
 
 \textcolor{corSubSection}{Cloud services:}
-mensageria SNS,
+Notificações SNS,
 filas SQS, (FIFO, Retry e DLQ),
-Step Functions,
-Concurrência, Batching de Mensagens, Auto Scaling
-Monitoramento CloudWatch  
-arquitetura e configuração de aplicações em Cloud
-como filas SNS, SQS, lambda, kubernets
+concorrência usando Batching de Mensagens e Auto Scaling,
+Integração com Step Functions,
+microsserviços Serverless ou kubernets,
+armazenamento em S3,
+gerenciamento e escalabilidade de instancias com EC2,
+monitoramento com CloudWatch.
 
 \textcolor{corSubSection}{CI/CD/DevOps tools:}
-Pipelines em Jenkins, Controle de Versão GIT (Bitbucket, GitHub, GitLab).
+Pipelines em Jenkins,
+Cobertura de testes,
+Controle de Versão GIT (Bitbucket, GitHub, GitLab).
 
 \textcolor{corSubSection}{Bancos de Dados:}
 SQL relacionais como
-MySQL, PostgreSQL, DynamoDB, e SQLite;
+MySQL, PostgreSQL, DynamoDB, e SQLite, RDS(AWS),
 NoSQL como
 MongoDB, Redis;
-ORM como JPA, Hi
+ORM como JPA, Hibernate.
 
 
+\textcolor{corSubSection}{Testes:}
+Testes unitários em Js usando Mocha, Chai, e Sinon, Jest; Jasmine,
+Em Java, JUnit, Spring Test, Mockito,
+Cobertura, Jacoco e Codecov,
+automação de teste, Selenium, Postman,
+SonarQubem;
 
-\textcolor{corSubSection}{Testes unitários:}
-javaScript com TDD e BDD usando Mocha, Chai, e Sinon, Jest; Jasmine, JUnit, Spring Test, Mockito, Cobertura, Jacoco e Codecov, SonarQubem; automação de teste, Selenium, Postman
+%testes unitarios (cobertura)
+%testes de integração (conexões sem mocks)
+%testes end to end (testes como um usuário com Cypress)
+%testes de carga (Artillery)
 
 \textcolor{corSubSection}{Containerização e Orquestração:}
-Ambientes isolados no Docker, Experiência com Containerização e Orquestração, Virtualizar servidores e deploy em contenedores Docker na AWS,
+Ambientes isolados no Docker, Experiência com Containerização e Orquestração,
+Virtualizar servidores e deploy em contenedores Docker na AWS,
 
 \textcolor{corSubSection}{Python:}
-Pandas, APIs Django | Flask, Scraping e Crawling com Beautifulsoup, automação de request via API, Scrapy e Selenium, Processamento de linguagem natural (PNL) com spaCy, UI com Tkintee, ORM, SQLAlchemy, Pymongo,
+Pandas, APIs Django | Flask, Scraping e Crawling com Beautifulsoup,
+automação de request via API, Scrapy e Selenium,
+Processamento de linguagem natural (PNL) com spaCy,
+UI com Tkintee, ORM, SQLAlchemy, Pymongo,
 
 \textcolor{corSubSection}{Java:}
-Spring Boot, desenvolvimento de microsserviços, APIs REST e aplicações web, stack MEAN com Angular, MEVN com Vue.js, injeção de Dependência, integração e manipulação de dados utilizando JPA, Hibernate, Build e Gerenciamento de Dependências, Maven, Gradle
+Spring Boot, desenvolvimento de microsserviços, APIs REST e aplicações web,
+injeção de Dependência, integração e manipulação de dados utilizando
+JPA, Hibernate,
 
-\textcolor{corSubSection}{Spring Batch:}
-jobs, steps, readers, writers, processors, listeners, e fluxos de processamento em lote, particionamento, chunk processing, agendamento de tarefas, retry policies, e controle de transações. injeção de dependência, integração com Spring Boot, ORM (Hibernate, JPA)
+Build e Gerenciamento de Dependências, Maven, Gradle
+
+Spring Batch com fluxos de processamento em lote,
+particionamento,
+chunk processing,
+agendamento de tarefas, retry policies,
+e controle de transações.
 
 \textcolor{corSubSection}{Metodologia ágeis:}
 Experiência trabalhando na metodologia Scrum, Kanban, plataformas ágeis como Jira, Requestia
