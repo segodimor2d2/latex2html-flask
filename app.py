@@ -34,7 +34,7 @@ class MyHandler(FileSystemEventHandler):
             print("Arquivo .tex modificado, recompilando...")
             compile_latex()
             convert_pdf_to_images()
-            refreshBrowser()
+            # refreshBrowser()
 
 @app.route('/')
 def serve_html():
